@@ -54,7 +54,7 @@
 				<div class="wrap-input100 validate-input m-b-25" data-validate = "Repeat password">
 					<input class="input100" type="password" name="pass2" placeholder="ulang kata sandi">
 					<span class="focus-input100"></span>
-					<?php echo form_error('password'); ?>
+					<!-- <?php// echo form_error('2'); ?> -->
 				</div>
 
 				<div class="container-login100-form-btn">

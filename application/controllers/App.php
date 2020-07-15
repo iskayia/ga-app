@@ -67,9 +67,9 @@ class App extends CI_Controller {
  {   
     $this->form_validation->set_rules('username','nama','required|trim');
     $this->form_validation->set_rules('nrp','nrp','required|trim|unique');
-    $this->form_validation->set_rules('pass','kata sandi','required|trim|min_length[3]|matches[pass2]');
-    $this->form_validation->set_rules('pass2','ulang kata sandi','required|trim|matches[pass]');
-
+    $this->form_validation->set_rules('pass','password','required|trim|min_length[3]|matches[pass2]');
+    $this->form_validation->set_rules('pass2','password2','required|trim|matches[pass]');
+    var_dump($this->form_validation->run());
     if($this->form_validation->run() == false){
       $data['title']= 'Daftar GA-APP';
       $data['bagian'] = $this->data_model->get_bagian();
@@ -89,13 +89,14 @@ class App extends CI_Controller {
 
        $this->data_model->input_data('staff', $data); 
        redirect('App');
-    }
+    } 
       
 
  }
 
   public function staff_list()
   {
+   $data['aku']= 'User';
      $this->load->view('staff/staff-header');
      $this->load->view('staff/staff-nav');
      $this->load->view('staff/staff-list');
@@ -103,11 +104,11 @@ class App extends CI_Controller {
 
  }
 
- public function staff_form()
+ public function staff_histori()
   {
      $this->load->view('staff/staff-header');
      $this->load->view('staff/staff-nav');
-     $this->load->view('staff/staff-form');
+     $this->load->view('staff/staff-histori');
      $this->load->view('staff/staff-footer');
 
  }

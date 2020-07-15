@@ -6,30 +6,26 @@
       Tip 2: you can also add an image using data-image tag
   -->
       <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-mini">
-          CT
-        </a>
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
-        </a>
+          <?= $aku; ?>
+        
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
             <a class="nav-link" href="<?= base_url('App/staff_list');?>">
               <i class="material-icons">dashboard</i>
-              <p>List OrderKerja</p>
+              <p>List Order Kerja</p>
             </a>
           </li>
           
           <li class="nav-item active ">
-            <a class="nav-link" href="<?= base_url('App/staff_form');?>">
+            <a class="nav-link" href="<?= base_url('App/staff_histori');?>">
               <i class="material-icons">content_paste</i>
-              <p>Form Permintaan Orke</p>
+              <p>Order Kerja Selesai</p>
             </a>
           </li>
 
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="<?= base_url('App/staff_profil');?>">
               <i class="material-icons">person</i>
               <p>Profil Anda</p>
@@ -53,22 +49,24 @@
           <div class="navbar-wrapper">
             <a class="navbar-brand" href="javascript:;">Dashboard</a>
           </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon icon-bar"></span>
             <span class="navbar-toggler-icon icon-bar"></span>
             <span class="navbar-toggler-icon icon-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end">
+          </button> -->
+          
+          <!-- <div class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="material-icons">notifications</i> Notifications
                 </a>
-              </li>
+              </li> -->
               <!-- your navbar here -->
-            </ul>
-          </div>
+            <!-- </ul>
+          </div> -->
+
         </div>
       </nav>
       <!-- End Navbar -->
